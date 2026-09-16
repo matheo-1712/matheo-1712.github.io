@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-15T13:57:21.011Z",
+  "generated": "2026-09-16T10:01:09.578Z",
   "count": 17,
   "projects": [
     {
@@ -236,7 +236,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 9439,
+        "downloads": 9465,
         "followers": 17,
         "license": "MIT"
       },
@@ -286,7 +286,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-09-15",
+        "lastSeenUp": "2026-09-16",
         "urls": {
           "https://antredesloutres.fr": true
         }
@@ -526,7 +526,7 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 341,
+        "downloads": 371,
         "followers": 4,
         "license": "CC0-1.0"
       },
@@ -1021,7 +1021,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-09-15",
+        "lastSeenUp": "2026-09-16",
         "urls": {
           "https://antredesloutres.fr": true
         }
