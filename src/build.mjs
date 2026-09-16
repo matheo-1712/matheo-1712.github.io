@@ -78,7 +78,7 @@ function masthead(profile, projects, prefix = "", nav = "") {
     );
   if (id.linkedin)
     links.push(`<a class="btn" href="${attr(id.linkedin)}" target="_blank" rel="noopener noreferrer">linkedin</a>`);
-  if (id.cv) links.push(`<a class="btn" href="${attr(prefix + id.cv)}">cv (pdf)</a>`);
+  if (id.cv) links.push(`<a class="btn" href="${attr(id.cv)}">cv (pdf)</a>`);
   links.push(`<button class="btn" id="theme-toggle" type="button">thème sombre</button>`);
 
   const avatar = profile.__avatar
