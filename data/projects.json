@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-17T10:03:45.412Z",
+  "generated": "2026-09-18T09:51:04.716Z",
   "count": 17,
   "projects": [
     {
@@ -236,7 +236,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 9518,
+        "downloads": 9553,
         "followers": 17,
         "license": "MIT"
       },
@@ -286,7 +286,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-09-17",
+        "lastSeenUp": "2026-09-18",
         "urls": {
           "https://antredesloutres.fr": true
         }
@@ -433,7 +433,7 @@
       "status": "wip",
       "started": "2026-08-15T15:04:01Z",
       "ended": "",
-      "updated": "2026-09-16T16:45:05Z",
+      "updated": "2026-09-17T11:27:40Z",
       "featured": false,
       "version": "v0.8.2",
       "prerelease": true,
@@ -444,8 +444,8 @@
       },
       "stars": 1,
       "contribution": {
-        "commits": 171,
-        "total": 171,
+        "commits": 173,
+        "total": 173,
         "rank": 1,
         "contributors": 1
       },
@@ -526,8 +526,8 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 419,
-        "followers": 4,
+        "downloads": 557,
+        "followers": 6,
         "license": "CC0-1.0"
       },
       "org": null,
@@ -1021,7 +1021,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-09-17",
+        "lastSeenUp": "2026-09-18",
         "urls": {
           "https://antredesloutres.fr": true
         }
