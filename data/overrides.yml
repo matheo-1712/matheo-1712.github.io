@@ -15,8 +15,8 @@
 #   order: 2
 #   summary: "Framework Discord modulaire qui propulse quatre bots en production."
 
-matheo-1712/re-otterbots:
-  alias_of: "l-antre-des-loutres/otterbots"
+matheo-1712/furina:
+  alias_of: "l-antre-des-loutres/citlali"
 
 matheo-1712/arisoutrev2:
   alias_of: "l-antre-des-loutres/arisoutre"
@@ -29,9 +29,6 @@ matheo-1712/otterlyapi:
 
 # L'API est citee dans le README d'OtterlyApi mais n'etait declaree nulle part :
 # sans URL declaree, aucune verification de disponibilite n'est possible.
-l-antre-des-loutres/otterlyapi:
-  links:
-    demo: "https://api.antredesloutres.fr/"
 
 # Galerie declaree a la main : les chemins sont relatifs a static/.
 # Elle est prioritaire sur une galerie recuperee depuis Modrinth.
