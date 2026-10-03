@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-02T11:09:43.276Z",
+  "generated": "2026-10-03T10:27:36.433Z",
   "count": 18,
   "projects": [
     {
@@ -16,7 +16,7 @@
       "status": "prod",
       "started": "2026-08-15T15:04:01Z",
       "ended": "",
-      "updated": "2026-10-02T00:07:33Z",
+      "updated": "2026-10-03T00:03:24Z",
       "featured": false,
       "version": "v1.0.0",
       "prerelease": false,
@@ -34,17 +34,33 @@
       },
       "gallery": [
         {
-          "url": "https://cdn.modrinth.com/data/khlinTrc/images/f48145c08aa671d5fbb47d2a9196ae20e35da89c_350.webp",
-          "full": "https://cdn.modrinth.com/data/khlinTrc/images/f48145c08aa671d5fbb47d2a9196ae20e35da89c.png",
-          "title": "Dynamax gimmicks for trainers",
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/3d412cea1b95f3876612b9026db96626a4a0f5ad_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/3d412cea1b95f3876612b9026db96626a4a0f5ad.png",
+          "title": "Another new intro",
           "description": "",
           "featured": true,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/3abfed23288c2808d8d0e609dd6ab9503efb42b2_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/3abfed23288c2808d8d0e609dd6ab9503efb42b2.png",
+          "title": "New intro !",
+          "description": "",
+          "featured": false,
           "source": "modrinth"
         },
         {
           "url": "https://cdn.modrinth.com/data/khlinTrc/images/8794ca26b80863c6d6107d17ee37a6a868f0c351_350.webp",
           "full": "https://cdn.modrinth.com/data/khlinTrc/images/8794ca26b80863c6d6107d17ee37a6a868f0c351.png",
           "title": "Optional intro battle similar to the Champion battle in BW",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/f48145c08aa671d5fbb47d2a9196ae20e35da89c_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/f48145c08aa671d5fbb47d2a9196ae20e35da89c.png",
+          "title": "Dynamax gimmicks for trainers",
           "description": "",
           "featured": false,
           "source": "modrinth"
@@ -109,7 +125,7 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 1929,
+        "downloads": 2013,
         "followers": 14,
         "license": "CC0-1.0"
       },
@@ -353,7 +369,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 9992,
+        "downloads": 10018,
         "followers": 20,
         "license": "MIT"
       },
@@ -403,7 +419,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-10-02",
+        "lastSeenUp": "2026-10-03",
         "urls": {
           "https://antredesloutres.fr": true
         }
@@ -1039,7 +1055,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-10-02",
+        "lastSeenUp": "2026-10-03",
         "urls": {
           "https://antredesloutres.fr": true
         }
