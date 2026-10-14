@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-13T12:46:07.422Z",
+  "generated": "2026-10-14T10:18:03.708Z",
   "count": 18,
   "projects": [
     {
@@ -15,7 +15,7 @@
       "status": "prod",
       "started": "2025-07-24T20:12:46Z",
       "ended": "",
-      "updated": "2026-10-10T14:09:05Z",
+      "updated": "2026-10-13T14:29:24Z",
       "featured": false,
       "version": "v1.6.5",
       "prerelease": false,
@@ -236,7 +236,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 10575,
+        "downloads": 10613,
         "followers": 20,
         "license": "MIT"
       },
@@ -369,11 +369,47 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 3286,
+        "downloads": 3360,
         "followers": 15,
         "license": "CC0-1.0"
       },
       "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "l-antre-des-loutres/mateloutre",
+      "slug": "mateloutre",
+      "title": "Mateloutre",
+      "summary": "Mateloutre mais qui marche",
+      "body": "",
+      "type": "Bot Discord",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": "prod",
+      "started": "2026-01-17T12:47:20Z",
+      "ended": "",
+      "updated": "2026-10-13T13:44:08Z",
+      "featured": false,
+      "version": "v1.3.1",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/Mateloutre"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 77,
+        "total": 90,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
       "hidden": false,
       "sources": [
         "github"
@@ -419,47 +455,11 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-10-13",
+        "lastSeenUp": "2026-10-14",
         "urls": {
           "https://antredesloutres.fr": true
         }
       }
-    },
-    {
-      "key": "l-antre-des-loutres/mateloutre",
-      "slug": "mateloutre",
-      "title": "Mateloutre",
-      "summary": "Mateloutre mais qui marche",
-      "body": "",
-      "type": "Bot Discord",
-      "stack": [
-        "TypeScript"
-      ],
-      "status": "prod",
-      "started": "2026-01-17T12:47:20Z",
-      "ended": "",
-      "updated": "2026-08-12T01:45:48Z",
-      "featured": false,
-      "version": "v1.3.0",
-      "prerelease": false,
-      "image": null,
-      "links": {
-        "repo": "https://github.com/L-Antre-des-Loutres/Mateloutre"
-      },
-      "stars": 1,
-      "contribution": {
-        "commits": 75,
-        "total": 88,
-        "rank": 1,
-        "contributors": 2
-      },
-      "gallery": [],
-      "modrinth": null,
-      "org": "L-Antre-des-Loutres",
-      "hidden": false,
-      "sources": [
-        "github"
-      ]
     },
     {
       "key": "l-antre-des-loutres/otterbots",
@@ -1055,7 +1055,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-10-13",
+        "lastSeenUp": "2026-10-14",
         "urls": {
           "https://antredesloutres.fr": true
         }
