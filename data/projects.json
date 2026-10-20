@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19T10:52:32.343Z",
+  "generated": "2026-10-20T10:08:43.173Z",
   "count": 18,
   "projects": [
     {
@@ -50,18 +50,18 @@
           "source": "modrinth"
         },
         {
-          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/baf5a4d0c7530be1e65fcaf8c92afb41b3e06451_350.webp",
-          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/baf5a4d0c7530be1e65fcaf8c92afb41b3e06451.png",
-          "title": "Gallama",
-          "description": "",
-          "featured": false,
-          "source": "modrinth"
-        },
-        {
           "url": "https://cdn.modrinth.com/data/GC58bFHM/images/f391682454864ba02e09a867de90b91524684105_350.webp",
           "full": "https://cdn.modrinth.com/data/GC58bFHM/images/f391682454864ba02e09a867de90b91524684105.png",
           "title": "Rineshell",
           "description": "A new fakemon",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/GC58bFHM/images/baf5a4d0c7530be1e65fcaf8c92afb41b3e06451_350.webp",
+          "full": "https://cdn.modrinth.com/data/GC58bFHM/images/baf5a4d0c7530be1e65fcaf8c92afb41b3e06451.png",
+          "title": "Gallama",
+          "description": "",
           "featured": false,
           "source": "modrinth"
         },
@@ -237,7 +237,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 10885,
+        "downloads": 10937,
         "followers": 21,
         "license": "MIT"
       },
@@ -287,17 +287,17 @@
           "source": "modrinth"
         },
         {
-          "url": "https://cdn.modrinth.com/data/khlinTrc/images/3abfed23288c2808d8d0e609dd6ab9503efb42b2_350.webp",
-          "full": "https://cdn.modrinth.com/data/khlinTrc/images/3abfed23288c2808d8d0e609dd6ab9503efb42b2.png",
-          "title": "New intro !",
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/8794ca26b80863c6d6107d17ee37a6a868f0c351_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/8794ca26b80863c6d6107d17ee37a6a868f0c351.png",
+          "title": "Optional intro battle similar to the Champion battle in BW",
           "description": "",
           "featured": false,
           "source": "modrinth"
         },
         {
-          "url": "https://cdn.modrinth.com/data/khlinTrc/images/8794ca26b80863c6d6107d17ee37a6a868f0c351_350.webp",
-          "full": "https://cdn.modrinth.com/data/khlinTrc/images/8794ca26b80863c6d6107d17ee37a6a868f0c351.png",
-          "title": "Optional intro battle similar to the Champion battle in BW",
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/3abfed23288c2808d8d0e609dd6ab9503efb42b2_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/3abfed23288c2808d8d0e609dd6ab9503efb42b2.png",
+          "title": "New intro !",
           "description": "",
           "featured": false,
           "source": "modrinth"
@@ -311,17 +311,9 @@
           "source": "modrinth"
         },
         {
-          "url": "https://cdn.modrinth.com/data/khlinTrc/images/21bea6c93dd9f681780bc3a17667b880b8ad3839_350.webp",
-          "full": "https://cdn.modrinth.com/data/khlinTrc/images/21bea6c93dd9f681780bc3a17667b880b8ad3839.png",
-          "title": "Terra Gimmicks for trainer",
-          "description": "",
-          "featured": false,
-          "source": "modrinth"
-        },
-        {
-          "url": "https://cdn.modrinth.com/data/khlinTrc/images/6be8e04ac78c80f7bb26b5d028a654b84ed7a9ba_350.webp",
-          "full": "https://cdn.modrinth.com/data/khlinTrc/images/6be8e04ac78c80f7bb26b5d028a654b84ed7a9ba.png",
-          "title": "Trainer Spawner Menu",
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/f6d406553358451e7720f72e23a2e45b47f6c4de_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/f6d406553358451e7720f72e23a2e45b47f6c4de.png",
+          "title": "Duo trainer battle",
           "description": "",
           "featured": false,
           "source": "modrinth"
@@ -335,6 +327,14 @@
           "source": "modrinth"
         },
         {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/6be8e04ac78c80f7bb26b5d028a654b84ed7a9ba_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/6be8e04ac78c80f7bb26b5d028a654b84ed7a9ba.png",
+          "title": "Trainer Spawner Menu",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
+        },
+        {
           "url": "https://cdn.modrinth.com/data/khlinTrc/images/91d829c7b23eafb8b43ddffb6976e3cdbb9fc2fa_350.webp",
           "full": "https://cdn.modrinth.com/data/khlinTrc/images/91d829c7b23eafb8b43ddffb6976e3cdbb9fc2fa.png",
           "title": "Mega gimmicks for trainers",
@@ -343,17 +343,9 @@
           "source": "modrinth"
         },
         {
-          "url": "https://cdn.modrinth.com/data/khlinTrc/images/f6d406553358451e7720f72e23a2e45b47f6c4de_350.webp",
-          "full": "https://cdn.modrinth.com/data/khlinTrc/images/f6d406553358451e7720f72e23a2e45b47f6c4de.png",
-          "title": "Duo trainer battle",
-          "description": "",
-          "featured": false,
-          "source": "modrinth"
-        },
-        {
-          "url": "https://cdn.modrinth.com/data/khlinTrc/images/a91401e80b3561567171e20cb53eb6a07ba5ac9a_350.webp",
-          "full": "https://cdn.modrinth.com/data/khlinTrc/images/a91401e80b3561567171e20cb53eb6a07ba5ac9a.png",
-          "title": "Use Cobblemon NPC Dialog",
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/21bea6c93dd9f681780bc3a17667b880b8ad3839_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/21bea6c93dd9f681780bc3a17667b880b8ad3839.png",
+          "title": "Terra Gimmicks for trainer",
           "description": "",
           "featured": false,
           "source": "modrinth"
@@ -365,12 +357,20 @@
           "description": "Work in progress: the Battle Phone - every trainer of the world in one list, your progress on each of them, and a button to call one over for a battle.",
           "featured": false,
           "source": "modrinth"
+        },
+        {
+          "url": "https://cdn.modrinth.com/data/khlinTrc/images/a91401e80b3561567171e20cb53eb6a07ba5ac9a_350.webp",
+          "full": "https://cdn.modrinth.com/data/khlinTrc/images/a91401e80b3561567171e20cb53eb6a07ba5ac9a.png",
+          "title": "Use Cobblemon NPC Dialog",
+          "description": "",
+          "featured": false,
+          "source": "modrinth"
         }
       ],
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 3804,
+        "downloads": 3877,
         "followers": 15,
         "license": "CC0-1.0"
       },
@@ -455,8 +455,8 @@
       ],
       "service": {
         "up": true,
-        "uncertain": true,
-        "lastSeenUp": "2026-10-18",
+        "uncertain": false,
+        "lastSeenUp": "2026-10-20",
         "urls": {
           "https://antredesloutres.fr": true
         }
@@ -1055,8 +1055,8 @@
       ],
       "service": {
         "up": true,
-        "uncertain": true,
-        "lastSeenUp": "2026-10-18",
+        "uncertain": false,
+        "lastSeenUp": "2026-10-20",
         "urls": {
           "https://antredesloutres.fr": true
         }
