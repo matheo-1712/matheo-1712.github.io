@@ -1,7 +1,53 @@
 {
-  "generated": "2026-10-21T10:16:32.833Z",
+  "generated": "2026-10-22T10:17:42.404Z",
   "count": 18,
   "projects": [
+    {
+      "key": "l-antre-des-loutres/astroloutre",
+      "slug": "astroloutre",
+      "title": "Astroloutre",
+      "summary": "Site de l'Antre des Loutres, lieu ou nos utilisateurs peuvent admirer leurs statistiques et accomplissements.",
+      "body": "Bienvenue sur le dépôt du site web de [L'Antre des Loutres](https://antredesloutres.fr).\nCe projet est une application web statique moderne construite avec **Astro** et **React**, conçue pour la performance,\nla flexibilité et une expérience utilisateur fluide.\n\n## Technologies\n\nCe projet utilise une stack moderne:\n\n- **Framework**: [Astro](https://astro.build/) (v5) - Pour la génération statique et la performance.\n- **UI Library**: [React](https://react.dev/) (v19) - Pour les composants interactifs complexes (tableaux de\n classements, etc.).\n- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v4) & Variables CSS natives pour la gestion des thèmes.\n- **Langage**: TypeScript - Pour un code robuste et typé.\n\n## Installation et Démarrage\n\n### Étapes\n\n1. **Cloner le projet**\n ```bash\n git clone https://github.com/L-Antre-des-Loutres/Reactisoutre.git\n cd Reactisoutre\n ```\n\n2. **Installer les dépendances**\n ```bash\n npm install\n ```\n\n3. **Lancer le serveur de développement**\n ```bash\n npm run dev\n ```\n Le site sera accessible sur `http://localhost:4321`.\n\n### Autres commandes utiles\n\n| Commande | Action |\n|:----------------------|:-------------------------------------------------------------|\n| `npm run build` | Compile le site pour la production dans le dossier `./dist/` |\n| `npm run preview` | Prévisualise le build de production localement |\n| `npm run astro check` | Lance une vérification des types et du code |\n\n## Structure du Projet\n\nL'architecture du code source dans `src/` est organisée comme suit:\n\n- **`pages/`**: Contient les routes du site. Astro utilise un routage basé sur les fichiers (ex:\n `pages/classements/minecraft.astro` devient `/classements/minecraft`).\n- **`components/`**:\n - `classements/`: Composants React gérant l'affichage et le tri des tableaux de scores.\n - `sections/`: Blocs de mise en page réutilisables (Bannières, Présentations...).\n - `ui/`: Composants d'interface atomiques (Boutons, Inputs...).\n- **`layouts/`**: Gabarits principaux (ex: `Layout.astro`) qui définissent la structure commune (Header, Footer, Meta\n tags).\n- **`styles/`**:\n - `themes/`: Définit les palettes de couleurs pour les modes Clair et Sombre via des variables CSS.\n - `global/`: Styles CSS globaux spécifiques (ex: `rankings.css`).\n- **`utils/`**: Fonctions utilitaires, helpers de formatage et logique métier partagée.\n\n## Fonctionnement des Thèmes (Dark Mode)\n\nLe site intègre un système de thème **Clair / Sombre** natif.\nCeci est géré via des variables CSS définies dans `src/styles/themes/`.\nLes composants utilisent ces variables (ex: `var(--background-color)`, `var(--ranking-text-color)`) pour s'adapter\nautomatiquement à la préférence de l'utilisateur ou au switch manuel.\n\n## Données et API\n\nL'application est \"Frontend-only\" pour l'affichage, mais elle consomme des données dynamiques.\nToutes les statistiques (Minecraft, Palworld, Discord) sont récupérées depuis notre API publique:\n\n **[Otterly API](https://otterlyapi.antredesloutres.fr/)**\n\n### Sources de données\n\n- **Minecraft**: Données collectées par [Otternel](https://github.com/Corentin-cott/Otternel) (Rust).\n- **Discord**: Bot Discord interne pour les statistiques d'activité.\n\n*Pour toute demande de suppression de données, veuillez consulter\nnotre [page de gestion des données](https://antredesloutres.fr/donnees/).*\n\n## Contributeurs\n\n- **Mathéo** ([matheo-1712](https://github.com/matheo-1712)): Développement Frontend (Astro/React) & API Otterly.\n- **Corentin** ([corentin-cott](https://github.com/corentin-cott)): Développement Backend, Outils de monitoring (\n Rust/Go) & DevOps.",
+      "type": "",
+      "stack": [
+        "Astro",
+        "TypeScript"
+      ],
+      "status": "prod",
+      "started": "2025-02-20T15:57:26Z",
+      "ended": "",
+      "updated": "2026-10-22T04:23:02Z",
+      "featured": false,
+      "version": "v1.7.0",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/Astroloutre",
+        "demo": "https://antredesloutres.fr"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 365,
+        "total": 576,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ],
+      "service": {
+        "up": true,
+        "uncertain": false,
+        "lastSeenUp": "2026-10-22",
+        "urls": {
+          "https://antredesloutres.fr": true
+        }
+      }
+    },
     {
       "key": "l-antre-des-loutres/cobblemon-rlm",
       "slug": "cobblemon-rlm",
@@ -16,7 +62,7 @@
       "status": "prod",
       "started": "2025-07-24T20:12:46Z",
       "ended": "",
-      "updated": "2026-10-14T23:06:12Z",
+      "updated": "2026-10-21T15:40:44Z",
       "featured": false,
       "version": "v1.7.0-beta",
       "prerelease": false,
@@ -27,8 +73,8 @@
       },
       "stars": 1,
       "contribution": {
-        "commits": 400,
-        "total": 613,
+        "commits": 401,
+        "total": 614,
         "rank": 1,
         "contributors": 2
       },
@@ -237,7 +283,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 10981,
+        "downloads": 11023,
         "followers": 21,
         "license": "MIT"
       },
@@ -261,7 +307,7 @@
       "status": "prod",
       "started": "2026-08-15T15:04:01Z",
       "ended": "",
-      "updated": "2026-10-06T11:46:49Z",
+      "updated": "2026-10-21T15:30:23Z",
       "featured": false,
       "version": "v1.1.0",
       "prerelease": false,
@@ -272,10 +318,10 @@
       },
       "stars": 2,
       "contribution": {
-        "commits": 277,
-        "total": 280,
+        "commits": 278,
+        "total": 282,
         "rank": 1,
-        "contributors": 2
+        "contributors": 3
       },
       "gallery": [
         {
@@ -370,7 +416,7 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 3963,
+        "downloads": 4033,
         "followers": 15,
         "license": "CC0-1.0"
       },
@@ -417,50 +463,41 @@
       ]
     },
     {
-      "key": "l-antre-des-loutres/astroloutre",
-      "slug": "astroloutre",
-      "title": "Astroloutre",
-      "summary": "Site de l'Antre des Loutres, lieu ou nos utilisateurs peuvent admirer leurs statistiques et accomplissements.",
-      "body": "Bienvenue sur le dépôt du site web de [L'Antre des Loutres](https://antredesloutres.fr).\nCe projet est une application web statique moderne construite avec **Astro** et **React**, conçue pour la performance,\nla flexibilité et une expérience utilisateur fluide.\n\n## Technologies\n\nCe projet utilise une stack moderne:\n\n- **Framework**: [Astro](https://astro.build/) (v5) - Pour la génération statique et la performance.\n- **UI Library**: [React](https://react.dev/) (v19) - Pour les composants interactifs complexes (tableaux de\n classements, etc.).\n- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v4) & Variables CSS natives pour la gestion des thèmes.\n- **Langage**: TypeScript - Pour un code robuste et typé.\n\n## Installation et Démarrage\n\n### Étapes\n\n1. **Cloner le projet**\n ```bash\n git clone https://github.com/L-Antre-des-Loutres/Reactisoutre.git\n cd Reactisoutre\n ```\n\n2. **Installer les dépendances**\n ```bash\n npm install\n ```\n\n3. **Lancer le serveur de développement**\n ```bash\n npm run dev\n ```\n Le site sera accessible sur `http://localhost:4321`.\n\n### Autres commandes utiles\n\n| Commande | Action |\n|:----------------------|:-------------------------------------------------------------|\n| `npm run build` | Compile le site pour la production dans le dossier `./dist/` |\n| `npm run preview` | Prévisualise le build de production localement |\n| `npm run astro check` | Lance une vérification des types et du code |\n\n## Structure du Projet\n\nL'architecture du code source dans `src/` est organisée comme suit:\n\n- **`pages/`**: Contient les routes du site. Astro utilise un routage basé sur les fichiers (ex:\n `pages/classements/minecraft.astro` devient `/classements/minecraft`).\n- **`components/`**:\n - `classements/`: Composants React gérant l'affichage et le tri des tableaux de scores.\n - `sections/`: Blocs de mise en page réutilisables (Bannières, Présentations...).\n - `ui/`: Composants d'interface atomiques (Boutons, Inputs...).\n- **`layouts/`**: Gabarits principaux (ex: `Layout.astro`) qui définissent la structure commune (Header, Footer, Meta\n tags).\n- **`styles/`**:\n - `themes/`: Définit les palettes de couleurs pour les modes Clair et Sombre via des variables CSS.\n - `global/`: Styles CSS globaux spécifiques (ex: `rankings.css`).\n- **`utils/`**: Fonctions utilitaires, helpers de formatage et logique métier partagée.\n\n## Fonctionnement des Thèmes (Dark Mode)\n\nLe site intègre un système de thème **Clair / Sombre** natif.\nCeci est géré via des variables CSS définies dans `src/styles/themes/`.\nLes composants utilisent ces variables (ex: `var(--background-color)`, `var(--ranking-text-color)`) pour s'adapter\nautomatiquement à la préférence de l'utilisateur ou au switch manuel.\n\n## Données et API\n\nL'application est \"Frontend-only\" pour l'affichage, mais elle consomme des données dynamiques.\nToutes les statistiques (Minecraft, Palworld, Discord) sont récupérées depuis notre API publique:\n\n **[Otterly API](https://otterlyapi.antredesloutres.fr/)**\n\n### Sources de données\n\n- **Minecraft**: Données collectées par [Otternel](https://github.com/Corentin-cott/Otternel) (Rust).\n- **Discord**: Bot Discord interne pour les statistiques d'activité.\n\n*Pour toute demande de suppression de données, veuillez consulter\nnotre [page de gestion des données](https://antredesloutres.fr/donnees/).*\n\n## Contributeurs\n\n- **Mathéo** ([matheo-1712](https://github.com/matheo-1712)): Développement Frontend (Astro/React) & API Otterly.\n- **Corentin** ([corentin-cott](https://github.com/corentin-cott)): Développement Backend, Outils de monitoring (\n Rust/Go) & DevOps.",
-      "type": "",
+      "key": "matheo-1712/oapi",
+      "slug": "oapi",
+      "title": "OAPI",
+      "summary": "OAPI is a high-performance, asynchronous orchestration API built with Rust. It serves as the backbone logic for the Antre des Loutres community, handling complex image generation, real-time infrastructure monitoring, and external API integration.",
+      "body": "**OAPI** is a high-performance, asynchronous orchestration API built with Rust. It serves as the backbone logic for the *Antre des Loutres* community, handling complex image generation, real-time infrastructure monitoring, and external API integration.\n\n---\n\n## Core Features\n\n### Dynamic Image Generation\nGenerate high-fidelity profile summary cards for Discord and Minecraft.\n- **Smart Caching**: Uses SHA-256 state hashing to avoid redundant generation.\n- **Real-time Stats**: Aggregates messaging activity, voice time, and Minecraft gameplay (playtime, distance, blocks).\n- **Rich Aesthetics**: Custom font rendering, dynamic color pills, and automated avatar retrieval (Discord & Minecraft heads).\n\n### Infrastructure Monitoring\nReal-time health tracking for the entire community ecosystem.\n- **Multi-protocol**: Supports HTTP(S) and Minecraft (TCP/SLP) status pings.\n- **Concurrent Checks**: All services are polled in parallel for sub-second response times.\n- **Live Dashboard**: A minimalist, modern web interface included.\n\n### PocketBase Integration\nA robust data layer powered by PocketBase.\n- **Admin Auth**: Secure and automated administrative access to collections.\n- **Exhaustive Fetching**: Custom pagination logic to retrieve complete historical data.\n- **Automatic Documentation**: Fully compliant OpenAPI 3.0 spec generated via `utoipa`.\n\n### Investor Dashboard\n- Restricted to `LoutreInvesti` and `Admin` accounts.\n- Displays current PocketBase record counts: Discord accounts, Minecraft players, Minecraft servers, and awarded badges.\n- Counts describe stored records, not active users or live server availability. They are queried on page load or manual refresh, with a UTC retrieval timestamp.\n- Database failures return HTTP 503 instead of fabricated or partial statistics. Responses use `Cache-Control: no-store`.\n- Frontend regression checks: `node --test tests/investor_page.test.cjs`.\n\n---\n\n## Architecture\n\nOAPI follows a strictly decoupled, layered architecture to ensure maintainability and testability:\n\n| Layer | Responsibility |\n|:--- |:--- |\n| **Handlers** | HTTP entry points, parameter extraction, and status codes. |\n| **Actions** | Use-case orchestration and external data fetching. |\n| **Services** | Pure business logic and computationally intensive tasks. |\n| **Models** | Strictly typed DTOs and OpenAPI schema definitions. |\n| **Utils** | Generic HTTP fetchers, formatters, and global constants. |\n\n---\n\n## Configuration\n\nThe system uses a hierarchical YAML configuration management system.\n\n1. **`default_config.yaml`**: The source of truth. Contains all default values and mandatory structure. (Committed to Git).\n2. **`config.yaml`**: Local overrides for environment-specific settings (local URLs, secret keys). (Ignored by Git).\n\n*On first run, the application automatically generates a `config.yaml` template if it is missing.*\n\n---\n\n## Getting Started\n\ngit clone https://github.com/matheo-1712/OAPI.git\ncd OAPI\n\ncargo run\n```\n\nBefore starting, copy `.env.example` to `.env`, supply the PocketBase and Discord credentials,\nand set `JWT_SECRET` to a cryptographically random value of at least 32 bytes. Startup rejects\nmissing or short secrets. Production requires `OAPI_ENV=production`, an HTTPS Discord callback\nURL and TLS termination on the reverse proxy. Session cookies are HttpOnly and SameSite=Lax.\n\nGenerated PNGs are stored in `generated_images/`, outside `public/`. Their URLs require the\nowner's session or an administrator session, including for Minecraft profiles. Existing files\nunder `public/generated_images/` are no longer served; regenerate profiles after upgrading.\nImage publication is atomic and reports write failures. Previous cache entries are retained to\navoid breaking concurrent downloads; disk retention should be managed separately.\n\n### Accessing the API\n- **Swagger UI**: [http://localhost:3000/swagger-ui](http://localhost:3000/swagger-ui)\n- **Monitoring Dashboard**: [http://localhost:3000/monitoring.html](http://localhost:3000/monitoring.html)\n\n---\n\n## Development & Quality\n\nWe maintain a **Zero Warnings Policy**. Every contribution must pass strict CI/CD checks.\n\n### Pre-commit Workflow\nBefore pushing, ensure your code meets the quality standards:\n```bash\ncargo fmt\n\ncargo clippy --all-targets --all-features -- -D warnings\n\ncargo test --all-features\n```\n\n---\n\n## Documentation\n\nProduction deployment: [guide de mise en production](./docs/production.md).\n\nAstro server integration: [Astroloutre et clé de service](./docs/astro.md).\n\nDeep dives into specific modules:\n- [ Architecture Overview](./docs/architecture.md) ([EN](./docs/en/architecture.md))\n- [ Monitoring System](./docs/monitoring.md) ([EN](./docs/en/monitoring.md))\n- [ Image Generation Engine](./docs/generation_images.md) ([EN](./docs/en/generation_images.md))\n- [ Configuration Management](./docs/configuration.md) ([EN](./docs/en/configuration.md))\n- [ PocketBase Integration](./docs/pocketbase.md) ([EN](./docs/en/pocketbase.md))\n\n---\n\n## Tech Stack\n- **Axum**: Asynchronous web framework.\n- **Tokio**: Multi-threaded runtime.\n- **Utoipa**: Automatic OpenAPI documentation.\n- **Image-rs**: Native image processing.\n- **Reqwest**: Type-safe HTTP client.\n- **Tracing**: Structured diagnostic logging.\n\n---\nBuilt by [matheo-1712](https://github.com/matheo-1712)\n\nDiscord activity JSON endpoints and request limits: [documentation](docs/discord_statistics.md).",
+      "type": "API REST",
       "stack": [
-        "Astro",
-        "TypeScript"
+        "Rust",
+        "JavaScript"
       ],
       "status": "prod",
-      "started": "2025-02-20T15:57:26Z",
+      "started": "2026-05-19T23:06:56Z",
       "ended": "",
-      "updated": "2026-08-28T12:02:00Z",
+      "updated": "2026-10-22T04:33:42Z",
       "featured": false,
-      "version": "v1.7.0",
+      "version": "v1.1.1",
       "prerelease": false,
       "image": null,
       "links": {
-        "repo": "https://github.com/L-Antre-des-Loutres/Astroloutre",
-        "demo": "https://antredesloutres.fr"
+        "repo": "https://github.com/matheo-1712/OAPI"
       },
-      "stars": 1,
+      "stars": 0,
       "contribution": {
-        "commits": 357,
-        "total": 568,
+        "commits": 117,
+        "total": 117,
         "rank": 1,
-        "contributors": 2
+        "contributors": 1
       },
       "gallery": [],
       "modrinth": null,
-      "org": "L-Antre-des-Loutres",
+      "org": null,
       "hidden": false,
       "sources": [
         "github"
-      ],
-      "service": {
-        "up": true,
-        "uncertain": false,
-        "lastSeenUp": "2026-10-21",
-        "urls": {
-          "https://antredesloutres.fr": true
-        }
-      }
+      ]
     },
     {
       "key": "l-antre-des-loutres/otterbots",
@@ -542,42 +579,6 @@
           "status": "archived",
           "relation": "predecessor"
         }
-      ]
-    },
-    {
-      "key": "matheo-1712/oapi",
-      "slug": "oapi",
-      "title": "OAPI",
-      "summary": "OAPI is a high-performance, asynchronous orchestration API built with Rust. It serves as the backbone logic for the Antre des Loutres community, handling complex image generation, real-time infrastructure monitoring, and external API integration.",
-      "body": "**OAPI** is a high-performance, asynchronous orchestration API built with Rust. It serves as the backbone logic for the *Antre des Loutres* community, handling complex image generation, real-time infrastructure monitoring, and external API integration.\n\n---\n\n## Core Features\n\n### Dynamic Image Generation\nGenerate high-fidelity profile summary cards for Discord and Minecraft.\n- **Smart Caching**: Uses SHA-256 state hashing to avoid redundant generation.\n- **Real-time Stats**: Aggregates messaging activity, voice time, and Minecraft gameplay (playtime, distance, blocks).\n- **Rich Aesthetics**: Custom font rendering, dynamic color pills, and automated avatar retrieval (Discord & Minecraft heads).\n\n### Infrastructure Monitoring\nReal-time health tracking for the entire community ecosystem.\n- **Multi-protocol**: Supports HTTP(S) and Minecraft (TCP/SLP) status pings.\n- **Concurrent Checks**: All services are polled in parallel for sub-second response times.\n- **Live Dashboard**: A minimalist, modern web interface included.\n\n### PocketBase Integration\nA robust data layer powered by PocketBase.\n- **Admin Auth**: Secure and automated administrative access to collections.\n- **Exhaustive Fetching**: Custom pagination logic to retrieve complete historical data.\n- **Automatic Documentation**: Fully compliant OpenAPI 3.0 spec generated via `utoipa`.\n\n### Investor Dashboard\n- Restricted to `LoutreInvesti` and `Admin` accounts.\n- Displays current PocketBase record counts: Discord accounts, Minecraft players, Minecraft servers, and awarded badges.\n- Counts describe stored records, not active users or live server availability. They are queried on page load or manual refresh, with a UTC retrieval timestamp.\n- Database failures return HTTP 503 instead of fabricated or partial statistics. Responses use `Cache-Control: no-store`.\n- Frontend regression checks: `node --test tests/investor_page.test.cjs`.\n\n---\n\n## Architecture\n\nOAPI follows a strictly decoupled, layered architecture to ensure maintainability and testability:\n\n| Layer | Responsibility |\n|:--- |:--- |\n| **Handlers** | HTTP entry points, parameter extraction, and status codes. |\n| **Actions** | Use-case orchestration and external data fetching. |\n| **Services** | Pure business logic and computationally intensive tasks. |\n| **Models** | Strictly typed DTOs and OpenAPI schema definitions. |\n| **Utils** | Generic HTTP fetchers, formatters, and global constants. |\n\n---\n\n## Configuration\n\nThe system uses a hierarchical YAML configuration management system.\n\n1. **`default_config.yaml`**: The source of truth. Contains all default values and mandatory structure. (Committed to Git).\n2. **`config.yaml`**: Local overrides for environment-specific settings (local URLs, secret keys). (Ignored by Git).\n\n*On first run, the application automatically generates a `config.yaml` template if it is missing.*\n\n---\n\n## Getting Started\n\ngit clone https://github.com/matheo-1712/OAPI.git\ncd OAPI\n\ncargo run\n```\n\nBefore starting, copy `.env.example` to `.env`, supply the PocketBase and Discord credentials,\nand set `JWT_SECRET` to a cryptographically random value of at least 32 bytes. Startup rejects\nmissing or short secrets. Production requires `OAPI_ENV=production`, an HTTPS Discord callback\nURL and TLS termination on the reverse proxy. Session cookies are HttpOnly and SameSite=Lax.\n\nGenerated PNGs are stored in `generated_images/`, outside `public/`. Their URLs require the\nowner's session or an administrator session, including for Minecraft profiles. Existing files\nunder `public/generated_images/` are no longer served; regenerate profiles after upgrading.\nImage publication is atomic and reports write failures. Previous cache entries are retained to\navoid breaking concurrent downloads; disk retention should be managed separately.\n\n### Accessing the API\n- **Swagger UI**: [http://localhost:3000/swagger-ui](http://localhost:3000/swagger-ui)\n- **Monitoring Dashboard**: [http://localhost:3000/monitoring.html](http://localhost:3000/monitoring.html)\n\n---\n\n## Development & Quality\n\nWe maintain a **Zero Warnings Policy**. Every contribution must pass strict CI/CD checks.\n\n### Pre-commit Workflow\nBefore pushing, ensure your code meets the quality standards:\n```bash\ncargo fmt\n\ncargo clippy --all-targets --all-features -- -D warnings\n\ncargo test --all-features\n```\n\n---\n\n## Documentation\n\nDeep dives into specific modules:\n- [ Architecture Overview](./docs/architecture.md) ([EN](./docs/en/architecture.md))\n- [ Monitoring System](./docs/monitoring.md) ([EN](./docs/en/monitoring.md))\n- [ Image Generation Engine](./docs/generation_images.md) ([EN](./docs/en/generation_images.md))\n- [ Configuration Management](./docs/configuration.md) ([EN](./docs/en/configuration.md))\n- [ PocketBase Integration](./docs/pocketbase.md) ([EN](./docs/en/pocketbase.md))\n\n---\n\n## Tech Stack\n- **Axum**: Asynchronous web framework.\n- **Tokio**: Multi-threaded runtime.\n- **Utoipa**: Automatic OpenAPI documentation.\n- **Image-rs**: Native image processing.\n- **Reqwest**: Type-safe HTTP client.\n- **Tracing**: Structured diagnostic logging.\n\n---\nBuilt by [matheo-1712](https://github.com/matheo-1712)",
-      "type": "API REST",
-      "stack": [
-        "Rust"
-      ],
-      "status": "wip",
-      "started": "2026-05-19T23:06:56Z",
-      "ended": "",
-      "updated": "2026-10-15T02:17:09Z",
-      "featured": false,
-      "version": "v0.5.0",
-      "prerelease": true,
-      "image": null,
-      "links": {
-        "repo": "https://github.com/matheo-1712/OAPI"
-      },
-      "stars": 0,
-      "contribution": {
-        "commits": 96,
-        "total": 96,
-        "rank": 1,
-        "contributors": 1
-      },
-      "gallery": [],
-      "modrinth": null,
-      "org": null,
-      "hidden": false,
-      "sources": [
-        "github"
       ]
     },
     {
@@ -1056,7 +1057,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-10-21",
+        "lastSeenUp": "2026-10-22",
         "urls": {
           "https://antredesloutres.fr": true
         }
