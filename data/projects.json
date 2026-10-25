@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T09:36:36.974Z",
+  "generated": "2026-10-25T09:53:23.909Z",
   "count": 18,
   "projects": [
     {
@@ -16,9 +16,9 @@
       "status": "prod",
       "started": "2025-02-20T15:57:26Z",
       "ended": "",
-      "updated": "2026-10-24T04:57:12Z",
+      "updated": "2026-10-25T01:41:31Z",
       "featured": false,
-      "version": "v1.7.0",
+      "version": "v1.8.1",
       "prerelease": false,
       "image": null,
       "links": {
@@ -27,8 +27,8 @@
       },
       "stars": 1,
       "contribution": {
-        "commits": 371,
-        "total": 582,
+        "commits": 401,
+        "total": 612,
         "rank": 1,
         "contributors": 2
       },
@@ -42,7 +42,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-10-24",
+        "lastSeenUp": "2026-10-25",
         "urls": {
           "https://antredesloutres.fr": true
         }
@@ -283,7 +283,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 11109,
+        "downloads": 11192,
         "followers": 21,
         "license": "MIT"
       },
@@ -416,7 +416,7 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 4169,
+        "downloads": 4264,
         "followers": 16,
         "license": "CC0-1.0"
       },
@@ -467,7 +467,7 @@
       "slug": "oapi",
       "title": "OAPI",
       "summary": "OAPI is a high-performance, asynchronous orchestration API built with Rust. It serves as the backbone logic for the Antre des Loutres community, handling complex image generation, real-time infrastructure monitoring, and external API integration.",
-      "body": "**OAPI** is a high-performance, asynchronous orchestration API built with Rust. It serves as the backbone logic for the *Antre des Loutres* community, handling complex image generation, real-time infrastructure monitoring, and external API integration.\n\n---\n\n## Core Features\n\n### Dynamic Image Generation\nGenerate high-fidelity profile summary cards for Discord and Minecraft.\n- **Smart Caching**: Uses SHA-256 state hashing to avoid redundant generation.\n- **Real-time Stats**: Aggregates messaging activity, voice time, and Minecraft gameplay (playtime, distance, blocks).\n- **Rich Aesthetics**: Custom font rendering, dynamic color pills, and automated avatar retrieval (Discord & Minecraft heads).\n\n### Infrastructure Monitoring\nReal-time health tracking for the entire community ecosystem.\n- **Multi-protocol**: Supports HTTP(S) and Minecraft (TCP/SLP) status pings.\n- **Concurrent Checks**: All services are polled in parallel for sub-second response times.\n- **Live Dashboard**: A minimalist, modern web interface included.\n\n### PocketBase Integration\nA robust data layer powered by PocketBase.\n- **Admin Auth**: Secure and automated administrative access to collections.\n- **Exhaustive Fetching**: Custom pagination logic to retrieve complete historical data.\n- **Automatic Documentation**: Fully compliant OpenAPI 3.0 spec generated via `utoipa`.\n\n### Investor Dashboard\n- Restricted to `LoutreInvesti` and `Admin` accounts.\n- Displays current PocketBase record counts: Discord accounts, Minecraft players, Minecraft servers, and awarded badges.\n- Counts describe stored records, not active users or live server availability. They are queried on page load or manual refresh, with a UTC retrieval timestamp.\n- Database failures return HTTP 503 instead of fabricated or partial statistics. Responses use `Cache-Control: no-store`.\n- Frontend regression checks: `node --test tests/investor_page.test.cjs`.\n\n---\n\n## Architecture\n\nOAPI follows a strictly decoupled, layered architecture to ensure maintainability and testability:\n\n| Layer | Responsibility |\n|:--- |:--- |\n| **Handlers** | HTTP entry points, parameter extraction, and status codes. |\n| **Actions** | Use-case orchestration and external data fetching. |\n| **Services** | Pure business logic and computationally intensive tasks. |\n| **Models** | Strictly typed DTOs and OpenAPI schema definitions. |\n| **Utils** | Generic HTTP fetchers, formatters, and global constants. |\n\n---\n\n## Configuration\n\nThe system uses a hierarchical YAML configuration management system.\n\n1. **`default_config.yaml`**: The source of truth. Contains all default values and mandatory structure. (Committed to Git).\n2. **`config.yaml`**: Local overrides for environment-specific settings (local URLs, secret keys). (Ignored by Git).\n\n*On first run, the application automatically generates a `config.yaml` template if it is missing.*\n\n---\n\n## Getting Started\n\ngit clone https://github.com/matheo-1712/OAPI.git\ncd OAPI\n\ncargo run\n```\n\nBefore starting, copy `.env.example` to `.env`, supply the PocketBase and Discord credentials,\nand set `JWT_SECRET` to a cryptographically random value of at least 32 bytes. Startup rejects\nmissing or short secrets. Production requires `OAPI_ENV=production`, an HTTPS Discord callback\nURL and TLS termination on the reverse proxy. Session cookies are HttpOnly and SameSite=Lax.\n\nGenerated PNGs are stored in `generated_images/`, outside `public/`. Their URLs require the\nowner's session or an administrator session, including for Minecraft profiles. Existing files\nunder `public/generated_images/` are no longer served; regenerate profiles after upgrading.\nImage publication is atomic and reports write failures. Previous cache entries are retained to\navoid breaking concurrent downloads; disk retention should be managed separately.\n\n### Accessing the API\n- **Swagger UI**: [http://localhost:3000/swagger-ui](http://localhost:3000/swagger-ui)\n- **Monitoring Dashboard**: [http://localhost:3000/monitoring.html](http://localhost:3000/monitoring.html)\n\n---\n\n## Development & Quality\n\nWe maintain a **Zero Warnings Policy**. Every contribution must pass strict CI/CD checks.\n\n### Pre-commit Workflow\nBefore pushing, ensure your code meets the quality standards:\n```bash\ncargo fmt\n\ncargo clippy --all-targets --all-features -- -D warnings\n\ncargo test --all-features\n```\n\n---\n\n## Documentation\n\nProduction deployment: [guide de mise en production](./docs/production.md).\n\nAstro server integration: [Astroloutre et clé de service](./docs/astro.md).\n\nDeep dives into specific modules:\n- [ Architecture Overview](./docs/architecture.md) ([EN](./docs/en/architecture.md))\n- [ Monitoring System](./docs/monitoring.md) ([EN](./docs/en/monitoring.md))\n- [ Image Generation Engine](./docs/generation_images.md) ([EN](./docs/en/generation_images.md))\n- [ Configuration Management](./docs/configuration.md) ([EN](./docs/en/configuration.md))\n- [ PocketBase Integration](./docs/pocketbase.md) ([EN](./docs/en/pocketbase.md))\n\n---\n\n## Tech Stack\n- **Axum**: Asynchronous web framework.\n- **Tokio**: Multi-threaded runtime.\n- **Utoipa**: Automatic OpenAPI documentation.\n- **Image-rs**: Native image processing.\n- **Reqwest**: Type-safe HTTP client.\n- **Tracing**: Structured diagnostic logging.\n\n---\nBuilt by [matheo-1712](https://github.com/matheo-1712)\n\nDiscord activity JSON endpoints and request limits: [documentation](docs/discord_statistics.md).",
+      "body": "**OAPI** is a high-performance, asynchronous orchestration API built with Rust. It serves as the backbone logic for the *Antre des Loutres* community, handling complex image generation, real-time infrastructure monitoring, and external API integration.\n\n---\n\n## Core Features\n\n### Dynamic Image Generation\nGenerate high-fidelity profile summary cards for Discord and Minecraft.\n- **Smart Caching**: Uses SHA-256 state hashing to avoid redundant generation.\n- **Real-time Stats**: Aggregates messaging activity, voice time, and Minecraft gameplay (playtime, distance, blocks).\n- **Rich Aesthetics**: Custom font rendering, dynamic color pills, and automated avatar retrieval (Discord & Minecraft heads).\n\n### Infrastructure Monitoring\nReal-time health tracking for the entire community ecosystem.\n- **Multi-protocol**: Supports HTTP(S) and Minecraft (TCP/SLP) status pings.\n- **Concurrent Checks**: All services are polled in parallel for sub-second response times.\n- **Live Dashboard**: A minimalist, modern web interface included.\n\n### PocketBase Integration\nA robust data layer powered by PocketBase.\n- **Admin Auth**: Secure and automated administrative access to collections.\n- **Exhaustive Fetching**: Custom pagination logic to retrieve complete historical data.\n- **Automatic Documentation**: Fully compliant OpenAPI 3.0 spec generated via `utoipa`.\n\n### Investor Dashboard\n- Restricted to `LoutreInvesti` and `Admin` accounts.\n- Displays current PocketBase record counts: Discord accounts, Minecraft players, Minecraft servers, and awarded badges.\n- Counts describe stored records, not active users or live server availability. They are queried on page load or manual refresh, with a UTC retrieval timestamp.\n- Database failures return HTTP 503 instead of fabricated or partial statistics. Responses use `Cache-Control: no-store`.\n- Frontend regression checks: `node --test tests/investor_page.test.cjs`.\n\n---\n\n## Architecture\n\nOAPI follows a strictly decoupled, layered architecture to ensure maintainability and testability:\n\n| Layer | Responsibility |\n|:--- |:--- |\n| **Handlers** | HTTP entry points, parameter extraction, and status codes. |\n| **Actions** | Use-case orchestration and external data fetching. |\n| **Services** | Pure business logic and computationally intensive tasks. |\n| **Models** | Strictly typed DTOs and OpenAPI schema definitions. |\n| **Utils** | Generic HTTP fetchers, formatters, and global constants. |\n\n---\n\n## Configuration\n\nThe system uses a hierarchical YAML configuration management system.\n\n1. **`default_config.yaml`**: The source of truth. Contains all default values and mandatory structure. (Committed to Git).\n2. **`config.yaml`**: Local overrides for environment-specific settings (local URLs, secret keys). (Ignored by Git).\n\n*On first run, the application automatically generates a `config.yaml` template if it is missing.*\n\n---\n\n## Getting Started\n\ngit clone https://github.com/matheo-1712/OAPI.git\ncd OAPI\n\ncargo run\n```\n\nBefore starting, copy `.env.example` to `.env`, supply the PocketBase and Discord credentials,\nand set `JWT_SECRET` to a cryptographically random value of at least 32 bytes. Startup rejects\nmissing or short secrets. Production requires `OAPI_ENV=production`, an HTTPS Discord callback\nURL and TLS termination on the reverse proxy. Session cookies are HttpOnly and SameSite=Lax.\n\nGenerated PNGs are stored in `generated_images/`, outside `public/`. Their URLs require the\nowner's session or an administrator session, including for Minecraft profiles. Existing files\nunder `public/generated_images/` are no longer served; regenerate profiles after upgrading.\nImage publication is atomic and reports write failures. Previous cache entries are retained to\navoid breaking concurrent downloads; disk retention should be managed separately.\n\n### Accessing the API\n- **Swagger UI**: [http://localhost:3000/swagger-ui](http://localhost:3000/swagger-ui)\n- **Monitoring Dashboard**: [http://localhost:3000/monitoring.html](http://localhost:3000/monitoring.html)\n\n---\n\n## Development & Quality\n\nWe maintain a **Zero Warnings Policy**. Every contribution must pass strict CI/CD checks.\n\n### Pre-commit Workflow\nBefore pushing, ensure your code meets the quality standards:\n```bash\ncargo fmt\n\ncargo clippy --all-targets --all-features -- -D warnings\n\ncargo test --all-features\n```\n\n---\n\n## Documentation\n\nProduction deployment: [guide de mise en production](./docs/production.md).\n\nAstro server integration: [Astroloutre et clé de service](./docs/astro.md).\n\nDeep dives into specific modules:\n- [ Architecture Overview](./docs/architecture.md) ([EN](./docs/en/architecture.md))\n- [ Monitoring System](./docs/monitoring.md) ([EN](./docs/en/monitoring.md))\n- [ Image Generation Engine](./docs/generation_images.md) ([EN](./docs/en/generation_images.md))\n- [ Configuration Management](./docs/configuration.md) ([EN](./docs/en/configuration.md))\n- [ PocketBase Integration](./docs/pocketbase.md) ([EN](./docs/en/pocketbase.md))\n- [ Tâches quotidiennes](./docs/daily_tasks.md)\n\n---\n\n## Tech Stack\n- **Axum**: Asynchronous web framework.\n- **Tokio**: Multi-threaded runtime.\n- **Utoipa**: Automatic OpenAPI documentation.\n- **Image-rs**: Native image processing.\n- **Reqwest**: Type-safe HTTP client.\n- **Tracing**: Structured diagnostic logging.\n\n---\nBuilt by [matheo-1712](https://github.com/matheo-1712)\n\nDiscord activity JSON endpoints and request limits: [documentation](docs/discord_statistics.md).",
       "type": "API REST",
       "stack": [
         "Rust"
@@ -475,18 +475,18 @@
       "status": "prod",
       "started": "2026-05-19T23:06:56Z",
       "ended": "",
-      "updated": "2026-10-24T03:42:57Z",
+      "updated": "2026-10-25T01:27:40Z",
       "featured": false,
-      "version": "v1.1.1",
+      "version": "v1.2.1",
       "prerelease": false,
       "image": null,
       "links": {
         "repo": "https://github.com/matheo-1712/OAPI"
       },
-      "stars": 0,
+      "stars": 1,
       "contribution": {
-        "commits": 132,
-        "total": 132,
+        "commits": 154,
+        "total": 154,
         "rank": 1,
         "contributors": 1
       },
@@ -1056,7 +1056,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-10-24",
+        "lastSeenUp": "2026-10-25",
         "urls": {
           "https://antredesloutres.fr": true
         }
