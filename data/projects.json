@@ -1,53 +1,7 @@
 {
-  "generated": "2026-11-02T13:36:39.994Z",
+  "generated": "2026-11-03T12:51:16.835Z",
   "count": 18,
   "projects": [
-    {
-      "key": "l-antre-des-loutres/astroloutre",
-      "slug": "astroloutre",
-      "title": "Astroloutre",
-      "summary": "Site de l'Antre des Loutres, lieu ou nos utilisateurs peuvent admirer leurs statistiques et accomplissements.",
-      "body": "Bienvenue sur le dépôt du site web de [L'Antre des Loutres](https://antredesloutres.fr).\nCe projet est une application web statique moderne construite avec **Astro** et **React**, conçue pour la performance,\nla flexibilité et une expérience utilisateur fluide.\n\n## Technologies\n\nCe projet utilise une stack moderne:\n\n- **Framework**: [Astro](https://astro.build/) (v5) - Pour la génération statique et la performance.\n- **UI Library**: [React](https://react.dev/) (v19) - Pour les composants interactifs complexes (tableaux de\n classements, etc.).\n- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v4) & Variables CSS natives pour la gestion des thèmes.\n- **Langage**: TypeScript - Pour un code robuste et typé.\n\n## Installation et Démarrage\n\n### Étapes\n\n1. **Cloner le projet**\n ```bash\n git clone https://github.com/L-Antre-des-Loutres/Reactisoutre.git\n cd Reactisoutre\n ```\n\n2. **Installer les dépendances**\n ```bash\n npm install\n ```\n\n3. **Lancer le serveur de développement**\n ```bash\n npm run dev\n ```\n Le site sera accessible sur `http://localhost:4321`.\n\n### Autres commandes utiles\n\n| Commande | Action |\n|:----------------------|:-------------------------------------------------------------|\n| `npm run build` | Compile le site pour la production dans le dossier `./dist/` |\n| `npm run preview` | Prévisualise le build de production localement |\n| `npm run astro check` | Lance une vérification des types et du code |\n\n## Structure du Projet\n\nL'architecture du code source dans `src/` est organisée comme suit:\n\n- **`pages/`**: Contient les routes du site. Astro utilise un routage basé sur les fichiers (ex:\n `pages/classements/minecraft.astro` devient `/classements/minecraft`).\n- **`components/`**:\n - `classements/`: Composants React gérant l'affichage et le tri des tableaux de scores.\n - `sections/`: Blocs de mise en page réutilisables (Bannières, Présentations...).\n - `ui/`: Composants d'interface atomiques (Boutons, Inputs...).\n- **`layouts/`**: Gabarits principaux (ex: `Layout.astro`) qui définissent la structure commune (Header, Footer, Meta\n tags).\n- **`styles/`**:\n - `themes/`: Définit les palettes de couleurs pour les modes Clair et Sombre via des variables CSS.\n - `global/`: Styles CSS globaux spécifiques (ex: `rankings.css`).\n- **`utils/`**: Fonctions utilitaires, helpers de formatage et logique métier partagée.\n\n## Fonctionnement des Thèmes (Dark Mode)\n\nLe site intègre un système de thème **Clair / Sombre** natif.\nCeci est géré via des variables CSS définies dans `src/styles/themes/`.\nLes composants utilisent ces variables (ex: `var(--background-color)`, `var(--ranking-text-color)`) pour s'adapter\nautomatiquement à la préférence de l'utilisateur ou au switch manuel.\n\n## Données et API\n\nL'application est \"Frontend-only\" pour l'affichage, mais elle consomme des données dynamiques.\nToutes les statistiques (Minecraft, Palworld, Discord) sont récupérées depuis notre API publique:\n\n **[Otterly API](https://otterlyapi.antredesloutres.fr/)**\n\n### Sources de données\n\n- **Minecraft**: Données collectées par [Otternel](https://github.com/Corentin-cott/Otternel) (Rust).\n- **Discord**: Bot Discord interne pour les statistiques d'activité.\n\n*Pour toute demande de suppression de données, veuillez consulter\nnotre [page de gestion des données](https://antredesloutres.fr/donnees/).*\n\n## Contributeurs\n\n- **Mathéo** ([matheo-1712](https://github.com/matheo-1712)): Développement Frontend (Astro/React) & API Otterly.\n- **Corentin** ([corentin-cott](https://github.com/corentin-cott)): Développement Backend, Outils de monitoring (\n Rust/Go) & DevOps.",
-      "type": "",
-      "stack": [
-        "Astro",
-        "TypeScript"
-      ],
-      "status": "prod",
-      "started": "2025-02-20T15:57:26Z",
-      "ended": "",
-      "updated": "2026-10-25T18:27:00Z",
-      "featured": false,
-      "version": "v1.9.0",
-      "prerelease": false,
-      "image": null,
-      "links": {
-        "repo": "https://github.com/L-Antre-des-Loutres/Astroloutre",
-        "demo": "https://antredesloutres.fr"
-      },
-      "stars": 1,
-      "contribution": {
-        "commits": 401,
-        "total": 612,
-        "rank": 1,
-        "contributors": 2
-      },
-      "gallery": [],
-      "modrinth": null,
-      "org": "L-Antre-des-Loutres",
-      "hidden": false,
-      "sources": [
-        "github"
-      ],
-      "service": {
-        "up": true,
-        "uncertain": false,
-        "lastSeenUp": "2026-11-02",
-        "urls": {
-          "https://antredesloutres.fr": true
-        }
-      }
-    },
     {
       "key": "l-antre-des-loutres/cobblemon-rlm",
       "slug": "cobblemon-rlm",
@@ -62,9 +16,9 @@
       "status": "prod",
       "started": "2025-07-24T20:12:46Z",
       "ended": "",
-      "updated": "2026-10-21T15:40:44Z",
+      "updated": "2026-11-02T23:13:53Z",
       "featured": false,
-      "version": "v1.7.0-beta",
+      "version": "v1.7.0",
       "prerelease": false,
       "image": "https://cdn.modrinth.com/data/GC58bFHM/3bf877dff9d979aac58d4df761f378cd57210cdb_96.webp",
       "links": {
@@ -283,7 +237,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 11385,
+        "downloads": 11433,
         "followers": 21,
         "license": "MIT"
       },
@@ -292,6 +246,52 @@
       "sources": [
         "github"
       ]
+    },
+    {
+      "key": "l-antre-des-loutres/astroloutre",
+      "slug": "astroloutre",
+      "title": "Astroloutre",
+      "summary": "Site de l'Antre des Loutres, lieu ou nos utilisateurs peuvent admirer leurs statistiques et accomplissements.",
+      "body": "Bienvenue sur le dépôt du site web de [L'Antre des Loutres](https://antredesloutres.fr).\nCe projet est une application web statique moderne construite avec **Astro** et **React**, conçue pour la performance,\nla flexibilité et une expérience utilisateur fluide.\n\n## Technologies\n\nCe projet utilise une stack moderne:\n\n- **Framework**: [Astro](https://astro.build/) (v5) - Pour la génération statique et la performance.\n- **UI Library**: [React](https://react.dev/) (v19) - Pour les composants interactifs complexes (tableaux de\n classements, etc.).\n- **Styling**: [Tailwind CSS](https://tailwindcss.com/) (v4) & Variables CSS natives pour la gestion des thèmes.\n- **Langage**: TypeScript - Pour un code robuste et typé.\n\n## Installation et Démarrage\n\n### Étapes\n\n1. **Cloner le projet**\n ```bash\n git clone https://github.com/L-Antre-des-Loutres/Reactisoutre.git\n cd Reactisoutre\n ```\n\n2. **Installer les dépendances**\n ```bash\n npm install\n ```\n\n3. **Lancer le serveur de développement**\n ```bash\n npm run dev\n ```\n Le site sera accessible sur `http://localhost:4321`.\n\n### Autres commandes utiles\n\n| Commande | Action |\n|:----------------------|:-------------------------------------------------------------|\n| `npm run build` | Compile le site pour la production dans le dossier `./dist/` |\n| `npm run preview` | Prévisualise le build de production localement |\n| `npm run astro check` | Lance une vérification des types et du code |\n\n## Structure du Projet\n\nL'architecture du code source dans `src/` est organisée comme suit:\n\n- **`pages/`**: Contient les routes du site. Astro utilise un routage basé sur les fichiers (ex:\n `pages/classements/minecraft.astro` devient `/classements/minecraft`).\n- **`components/`**:\n - `classements/`: Composants React gérant l'affichage et le tri des tableaux de scores.\n - `sections/`: Blocs de mise en page réutilisables (Bannières, Présentations...).\n - `ui/`: Composants d'interface atomiques (Boutons, Inputs...).\n- **`layouts/`**: Gabarits principaux (ex: `Layout.astro`) qui définissent la structure commune (Header, Footer, Meta\n tags).\n- **`styles/`**:\n - `themes/`: Définit les palettes de couleurs pour les modes Clair et Sombre via des variables CSS.\n - `global/`: Styles CSS globaux spécifiques (ex: `rankings.css`).\n- **`utils/`**: Fonctions utilitaires, helpers de formatage et logique métier partagée.\n\n## Fonctionnement des Thèmes (Dark Mode)\n\nLe site intègre un système de thème **Clair / Sombre** natif.\nCeci est géré via des variables CSS définies dans `src/styles/themes/`.\nLes composants utilisent ces variables (ex: `var(--background-color)`, `var(--ranking-text-color)`) pour s'adapter\nautomatiquement à la préférence de l'utilisateur ou au switch manuel.\n\n## Données et API\n\nL'application est \"Frontend-only\" pour l'affichage, mais elle consomme des données dynamiques.\nToutes les statistiques (Minecraft, Palworld, Discord) sont récupérées depuis notre API publique:\n\n **[Otterly API](https://otterlyapi.antredesloutres.fr/)**\n\n### Sources de données\n\n- **Minecraft**: Données collectées par [Otternel](https://github.com/Corentin-cott/Otternel) (Rust).\n- **Discord**: Bot Discord interne pour les statistiques d'activité.\n\n*Pour toute demande de suppression de données, veuillez consulter\nnotre [page de gestion des données](https://antredesloutres.fr/donnees/).*\n\n## Contributeurs\n\n- **Mathéo** ([matheo-1712](https://github.com/matheo-1712)): Développement Frontend (Astro/React) & API Otterly.\n- **Corentin** ([corentin-cott](https://github.com/corentin-cott)): Développement Backend, Outils de monitoring (\n Rust/Go) & DevOps.",
+      "type": "",
+      "stack": [
+        "Astro",
+        "TypeScript"
+      ],
+      "status": "prod",
+      "started": "2025-02-20T15:57:26Z",
+      "ended": "",
+      "updated": "2026-10-25T18:27:00Z",
+      "featured": false,
+      "version": "v1.9.0",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/Astroloutre",
+        "demo": "https://antredesloutres.fr"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 401,
+        "total": 612,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ],
+      "service": {
+        "up": true,
+        "uncertain": false,
+        "lastSeenUp": "2026-11-03",
+        "urls": {
+          "https://antredesloutres.fr": true
+        }
+      }
     },
     {
       "key": "matheo-1712/cobblemon-trainers",
@@ -416,7 +416,7 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 5018,
+        "downloads": 5058,
         "followers": 19,
         "license": "CC0-1.0"
       },
@@ -1056,7 +1056,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-11-02",
+        "lastSeenUp": "2026-11-03",
         "urls": {
           "https://antredesloutres.fr": true
         }
