@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-05T00:19:33.602Z",
-  "count": 18,
+  "generated": "2026-11-05T01:51:02.749Z",
+  "count": 20,
   "projects": [
     {
       "key": "l-antre-des-loutres/cobblemon-rlm",
@@ -237,7 +237,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 10837,
+        "downloads": 10839,
         "followers": 21,
         "license": "MIT"
       },
@@ -416,7 +416,7 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 3755,
+        "downloads": 3756,
         "followers": 19,
         "license": "CC0-1.0"
       },
@@ -581,30 +581,30 @@
       ]
     },
     {
-      "key": "matheo-1712/memo_rust_initiation",
-      "slug": "memo-rust-initiation",
-      "title": "Memo Rust Initiation",
-      "summary": "Bienvenue. Ce dépôt est un cours complet de Rust en français, organisé en 13 chapitres. Chaque chapitre est un dossier avec un README.md qui contient:",
-      "body": "Bienvenue. Ce dépôt est un **cours complet de Rust en français**, organisé en 13 chapitres.\nChaque chapitre est un dossier avec un `README.md` qui contient:\n\n- les **notions** à comprendre (avec des extraits de syntaxe pour illustrer, jamais la solution);\n- les **pièges classiques** et comment lire les messages du compilateur;\n- des **exercices** variés, avec spécification précise, sorties attendues et critères de réussite;\n- à partir du chapitre 3, un **jalon** qui fait avancer l'application finale.\n\n> **Règle du jeu:** je ne te donne jamais le code que tu dois écrire. Je te donne la doc,\n> les signatures, le comportement attendu et les indices. Le code, c'est toi.\n\n---\n\n## L'application finale: **Mémo**\n\nÀ la fin du cours, tu auras écrit **Mémo**, un logiciel de révision en ligne de commande\nbasé sur la **répétition espacée** (le principe d'Anki, en beaucoup plus simple).\n\nCe que Mémo saura faire:\n\n```\n$ memo add --deck rust \"Que fait le mot-clé `move`?\" \"Force la closure à prendre possession...\"\nCarte #42 ajoutée au paquet « rust ».\n\n$ memo review --deck rust\nPaquet « rust » — 7 cartes à réviser aujourd'hui\n\n[1/7] Que fait le mot-clé `move`?\n (Entrée pour révéler)\n > Force la closure à prendre possession des variables capturées.\n Ta réponse: (0) oubliée (1) difficile (2) correcte (3) facile > 2\n Prochaine révision dans 6 jours.\n...\nSession terminée: 7 cartes, 85 % de réussite, 1 min 12 s.\n\n$ memo stats\nPaquets: 3 | Cartes: 128 | À réviser demain: 14\nrust 62 cartes (maturité 71 %)\nanglais 38 cartes (maturité 44 %)\n```\n\nPourquoi ce projet? Parce qu'il t'oblige à croiser **tout** ce qui fait Rust:\nmodélisation avec `struct`/`enum`, `Option`/`Result`, collections, traits, itérateurs,\ngestion d'erreurs propre, lecture/écriture de fichiers, sérialisation JSON, arguments\nde ligne de commande, tests, et même un peu de parallélisme. Et à la fin, tu t'en serviras\npour réviser… Rust.\n\n---\n\n## Le parcours\n\n| # | Chapitre | Notions clés | Jalon Mémo |\n|---|----------|--------------|------------|\n| 00 | [Mise en route](cours/00-mise-en-route/README.md) | toolchain, cargo, rustfmt, clippy | — |\n| 01 | [Les bases du langage](cours/01-bases-du-langage/README.md) | variables, types, fonctions, contrôle de flux | — |\n| 02 | [Ownership et emprunts](cours/02-ownership-et-emprunts/README.md) | move, `&`, `&mut`, slices, `String` vs `&str` | — |\n| 03 | [Structs, enums, pattern matching](cours/03-structs-enums-pattern-matching/README.md) | `struct`, `enum`, `match`, `impl` | Le type `Card` |\n| 04 | [Collections et erreurs](cours/04-collections-et-erreurs/README.md) | `Vec`, `HashMap`, `Option`, `Result`, `?` | Le `Deck` |\n| 05 | [Modules, tests et crates](cours/05-modules-tests-et-crates/README.md) | `mod`, visibilité, `#[test]`, dépendances | Découpage en modules |\n| 06 | [Traits et génériques](cours/06-traits-et-generiques/README.md) | `trait`, `impl Trait`, `dyn`, bornes | `Display`, `Scheduler` |\n| 07 | [Closures et itérateurs](cours/07-closures-et-iterateurs/README.md) | `Fn`, `map`/`filter`/`fold`, chaînes lazy | Filtres et stats |\n| 08 | [Durées de vie et smart pointers](cours/08-lifetimes-et-smart-pointers/README.md) | `'a`, `Box`, `Rc`, `RefCell` | Vues empruntées |\n| 09 | [Fichiers et sérialisation](cours/09-fichiers-et-serialisation/README.md) | `std::fs`, `io`, serde, JSON | Sauvegarde/chargement |\n| 10 | [CLI et ergonomie](cours/10-cli-et-ergonomie/README.md) | clap, sous-commandes, couleurs, codes de sortie | L'interface complète |\n| 11 | [Concurrence](cours/11-concurrence/README.md) | threads, `Send`/`Sync`, `Arc<Mutex>`, canaux | Import parallèle |\n| 12 | [Projet final: Mémo](cours/12-projet-final-memo/README.md) | assemblage, algorithme SM-2, polish | L'application entière |\n\nAnnexes:\n- [Aide-mémoire de syntaxe](cours/annexes/aide-memoire.md)\n- [Décoder les erreurs du compilateur](cours/annexes/erreurs-du-compilateur.md)\n- [Ressources et lectures](cours/annexes/ressources.md)\n\n---\n\n## Comment travailler\n\n1. **Lis le chapitre en entier une première fois**, sans coder. Tu ne retiendras pas tout, c'est normal.\n2. **Fais les exercices dans l'ordre.** Ils sont progressifs: l'exercice 3 suppose l'exercice 1 digéré.\n3. **Compile souvent.** `cargo check` après chaque bloc de 5 lignes, au début. Le compilateur Rust\n est un professeur particulier: ses messages sont longs parce qu'ils contiennent la solution.\n4. **Ne fuis pas devant une erreur d'emprunt.** Lis le message, relis le chapitre 2, essaie.\n Le moment où tu « comprends » l'ownership est le moment où tu deviens autonome en Rust.\n5. **Écris des tests** dès le chapitre 5. Sur ce projet, ils t'éviteront de casser l'algorithme\n de révision sans t'en apercevoir.\n\nRythme conseillé: **un chapitre par session** de 1 h à 2 h. Le chapitre 2 mérite d'y revenir deux fois.\n\n### Quand tu es bloqué\n\nDans l'ordre:\n1. Relis le message d'erreur en entier (`cargo check` puis, s'il y a un code type `E0502`, `rustc --explain E0502`).\n2. Cherche la méthode dans la doc locale: `cargo doc --open`, ou <https://doc.rust-lang.org/std/>.\n3. Regarde la section « Indices » de l'exercice — elle te dit *quoi* chercher, pas *comment* l'écrire.\n4. Demande-moi une explication de la notion. (Pas la solution: tu m'en voudras.)\n\n---\n\n## Organisation du dépôt\n\n```\ntuto-rust/\n README.md ← tu es ici\n Cargo.toml ← workspace: liste tes crates d'exercices\n src/main.rs ← bac à sable du chapitre 1\n cours/ ← les 13 chapitres + annexes\n exercices/ ← un dossier (= une crate) par exercice, créé par toi\n ch01-fizzbuzz/\n ch01-temperature/\n...\n projet/memo/ ← l'application finale, construite jalon après jalon\n```\n\nChaque exercice est une **crate indépendante** que tu crées toi-même\n(`cargo new exercices/ch01-fizzbuzz`). Le chapitre 0 explique la mécanique.\n\nBonne route. Commence par [le chapitre 0](cours/00-mise-en-route/README.md).",
+      "key": "matheo-1712/m.a.t.h.e.o",
+      "slug": "m-a-t-h-e-o",
+      "title": "M.A.T.H.E.O",
+      "summary": "Mon Assistant Technique Hautement Évolutif et Organisé",
+      "body": "",
       "type": "",
       "stack": [
-        "Rust"
+        "Python"
       ],
       "status": "wip",
-      "started": "2026-08-17T00:25:39Z",
+      "started": "2026-10-07T20:45:15Z",
       "ended": "",
-      "updated": "2026-09-06T20:23:43Z",
+      "updated": "2026-10-07T21:25:02Z",
       "featured": false,
       "version": "",
       "prerelease": false,
       "image": null,
       "links": {
-        "repo": "https://github.com/matheo-1712/memo_rust_initiation"
+        "repo": "https://github.com/matheo-1712/M.A.T.H.E.O"
       },
       "stars": 0,
       "contribution": {
-        "commits": 12,
-        "total": 12,
+        "commits": 2,
+        "total": 2,
         "rank": 1,
         "contributors": 1
       },
@@ -719,6 +719,80 @@
       "gallery": [],
       "modrinth": null,
       "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "lp-applications-web-angers-2025-2026/hiddenink",
+      "slug": "hiddenink",
+      "title": "HiddenInk",
+      "summary": "Application C++ de stéganographie permettant de cacher du texte dans une image, à la manière d’une écriture à l’encre invisible.",
+      "body": "",
+      "type": "",
+      "stack": [
+        "C++"
+      ],
+      "status": "archived",
+      "started": "2025-10-06T09:38:39Z",
+      "ended": "2026-04-06T20:56:38Z",
+      "updated": "2026-04-06T20:56:38Z",
+      "featured": false,
+      "version": "v1.0.0",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/LP-Applications-Web-Angers-2025-2026/HiddenInk"
+      },
+      "stars": 0,
+      "contribution": {
+        "commits": 49,
+        "total": 78,
+        "rank": 1,
+        "contributors": 5
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "LP-Applications-Web-Angers-2025-2026",
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
+      "key": "lp-applications-web-angers-2025-2026/projet2",
+      "slug": "projet2",
+      "title": "projet2",
+      "summary": "Ce depot contient un site pedagogique genere a partir de Markdown, avec injection automatique de benchmarks (SQLite + Highcharts), extraction de contenu depuis PDF et mise en forme via un layout PHP commun.",
+      "body": "Ce depot contient un site pedagogique genere a partir de Markdown, avec injection automatique de benchmarks (SQLite + Highcharts), extraction de contenu depuis PDF et mise en forme via un layout PHP commun.\n\n## 1) Objectif du projet\n\nLe site presente des etudes de cas autour de l'assembleur (x86 32/64), avec:\n\n- des chapitres rediges en Markdown;\n- des blocs de code exportes automatiquement;\n- des tableaux + graphiques de performances injectes depuis une base SQLite;\n- un pipeline d'extraction/import depuis un PDF source.\n\n## 2) Architecture du depot\n\nPrincipaux repertoires:\n\n- `site_web/`: site genere (HTML statique), styles, JS, data, templates;\n- `site_web/pages-md/`: sources Markdown des chapitres;\n- `site_web/markdown_to_php/build.php`: pipeline principal Markdown -> HTML;\n- `site_web/markdown_to_php/templates/layout.php`: layout commun;\n- `site_web/ez_web.php`: header/footer/menu + helpers historiques;\n- `site_web/data/benchmarks.db`: base SQLite des benchmarks;\n- `site_web/data/graph.js`: rendu des graphiques Highcharts;\n- `pdf_extract/`: scripts d'analyse/extraction/import depuis PDF;\n- `lar/`: dossiers de travaux benchmarks assembleur/C/C++ (sources et scripts de perf).\n\n## 3) Prerequis\n\nMinimum recommande:\n\n- PHP 8.x;\n- Composer;\n- extension PDO SQLite active dans PHP;\n- `sqlite3` (CLI, utile pour debug base);\n- `pdftotext` (`poppler-utils`) pour certains scripts d'extraction;\n- dependances Composer installees (`smalot/pdfparser`).\n\n## 4) Installation rapide\n\nDepuis la racine du projet:\n\n```bash\ncd /home/etud/PhpstormProjects/projet2\ncomposer install\n```\n\nOptionnel (outils extraction PDF):\n\n```bash\nsudo apt install -y poppler-utils sqlite3\n```\n\n## 5) Comment le site est genere\n\nLe flux principal est:\n\n1. lire chaque fichier `site_web/pages-md/*.md`;\n2. detecter/remplacer les balises speciales (ex: `[BENCHMARK:...]`);\n3. convertir Markdown vers HTML (Parsedown);\n4. post-traiter le HTML (titres, tableaux, blocs de code, nettoyage);\n5. injecter le layout via `templates/layout.php`;\n6. ecrire le resultat dans `site_web/*.html`.\n\nCommande:\n\n```bash\nphp site_web/markdown_to_php/build.php\n```\n\n### Details importants du build\n\n- Les formules mathematiques `$...$` et `$$...$$` sont protegees avant parsing pour eviter la corruption des `_` par le parser Markdown.\n- Les blocs de code Markdown sont exportes vers `site_web/code/chapitre_X/` puis affiches dans des `<details>` avec coloration GeSHi.\n- Si un benchmark est present, `highcharts.js` et `site_web/data/graph.js` sont injectes automatiquement dans la page.\n- Le lien Accueil du header pointe vers `/` (force dans `site_web/ez_web.php`).\n\n## 6) Systeme de benchmark dynamique\n\n### 6.1 Balisage dans le Markdown\n\nDans un chapitre, il suffit d'ecrire:\n\n```markdown\n[BENCHMARK:nom_du_benchmark]\n```\n\nExemples utilises:\n\n- `[BENCHMARK:asm_selfdesc]`\n- `[BENCHMARK:asm_bsr_lzcnt]`\n\n### 6.2 Source des donnees\n\nLe build interroge `site_web/data/benchmarks.db`, vue `v_resultats`, en filtrant:\n\n- `chapitre = nom_du_benchmark`\n- `type_test IN ('temps moyen', 'performance')`\n\nVue disponible dans la base:\n\n- `v_resultats(id_resultat, nom_cpu, marque, annee, chapitre, type_test, nom_test, valeur_resultat, validation, remarque)`\n\n### 6.3 Segmentation des graphiques\n\nPar defaut, un benchmark est split en 3 groupes:\n\n- `ancien`: annee < 2015\n- `moderne`: 2015 <= annee < 2020\n- `recent`: annee >= 2020\n\nCas special: `asm_bsr_lzcnt` est affiche en vue globale unique.\n\n## 7) Pipeline PDF (extraction/import)\n\nRepertoire: `pdf_extract/`\n\nScripts principaux:\n\n- `pdf_probe.php`: inspection structure PDF;\n- `extract_pdf_to_markdown.php`: extraction PDF -> fichiers Markdown;\n- `extract_chapter_data.php`: generation JSON de donnees chapitres;\n- `import_benchmark.php`: insertion/maj benchmarks dans SQLite.\n\nConfiguration centralisee: `pdf_extract/config.php` (+ `pdf_extract/.env`).\n\nVariables supportees:\n\n- `PDF_PATH`\n- `DB_PATH`\n- `OUTPUT_DIR`\n- `DATA_DIR`\n\nExemples:\n\n```bash\nphp pdf_extract/import_benchmark.php --config\nphp pdf_extract/pdf_probe.php --config\nphp pdf_extract/extract_pdf_to_markdown.php --config\nphp pdf_extract/import_benchmark.php\n```\n\n## 8) Lancer le site en local\n\nLe site genere est statique (HTML/CSS/JS). Pour le consulter localement:\n\n```bash\ncd site_web\nphp -S 127.0.0.1:8080\n```\n\nPuis ouvrir:\n\n- `http://127.0.0.1:8080/index.html`\n- ou directement un chapitre (ex: `chapitre_17.html`).\n\n## 9) Workflow mainteneur recommande\n\n1. Modifier un chapitre dans `site_web/pages-md/`.\n2. Ajouter/mettre a jour les donnees benchmark via SQLite ou `pdf_extract/import_benchmark.php`.\n3. Regenerer: `php site_web/markdown_to_php/build.php`.\n4. Verifier visuellement les pages modifiees.\n5. Commit des fichiers source + HTML regeneres si votre process le demande.\n\n## 10) Depannage courant\n\n### Le graphique ne s'affiche pas\n\nVerifier:\n\n- presence de la balise `[BENCHMARK:...]` dans le Markdown;\n- presence de donnees correspondantes dans `v_resultats` (`chapitre` identique);\n- chargement de `highcharts.js` et `data/graph.js` dans la page generee.\n\n### Le tableau benchmark est vide\n\n- Verifier que `type_test` est bien `temps moyen` ou `performance`;\n- Verifier l'existence du benchmark dans la table `Chapitre` + `Test` + `Resultat`.\n\n### Erreurs sur les formules\n\nLe build protege les formules math avant parsing Markdown. Si une formule casse, verifier que les delimiteurs `$...$` ou `$$...$$` sont bien fermes.\n\n### Scripts PDF en erreur\n\n- verifier le chemin du PDF (`PDF_PATH`);\n- verifier `pdftotext` installe;\n- verifier les droits d'ecriture des repertoires de sortie.\n\n## 11) Fichiers de reference\n\n- `site_web/markdown_to_php/build.php`\n- `site_web/markdown_to_php/templates/layout.php`\n- `site_web/ez_web.php`\n- `site_web/data/graph.js`\n- `site_web/SITE_WEB_DOC.md`\n- `pdf_extract/config.php`\n- `pdf_extract/import_benchmark.php`\n\n---",
+      "type": "",
+      "stack": [
+        "PHP",
+        "Assembly",
+        "JavaScript"
+      ],
+      "status": "archived",
+      "started": "2025-12-08T09:29:30Z",
+      "ended": "2026-03-27T09:32:28Z",
+      "updated": "2026-03-27T09:32:28Z",
+      "featured": false,
+      "version": "v1.2",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/LP-Applications-Web-Angers-2025-2026/projet2"
+      },
+      "stars": 0,
+      "contribution": {
+        "commits": 52,
+        "total": 62,
+        "rank": 1,
+        "contributors": 4
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "LP-Applications-Web-Angers-2025-2026",
       "hidden": false,
       "sources": [
         "github"
