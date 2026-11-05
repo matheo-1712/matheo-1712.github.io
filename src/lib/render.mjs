@@ -266,6 +266,7 @@ ${canonical ? `<link rel="canonical" href="${attr(canonical)}">` : ""}
 <meta property="og:title" content="${attr(title)}">
 <meta property="og:description" content="${attr(description)}">
 ${url ? `<meta property="og:url" content="${attr(url)}">` : ""}
+${url ? `<meta property="og:image" content="${attr(new URL("/img/og.png", url).href)}">` : ""}
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="${assetsPrefix}style.css${v}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d7581'/><path d='M8.5 23.5v-15L16 18l7.5-9.5v15' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
