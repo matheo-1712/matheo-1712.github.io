@@ -268,7 +268,7 @@ ${canonical ? `<link rel="canonical" href="${attr(canonical)}">` : ""}
 ${url ? `<meta property="og:url" content="${attr(url)}">` : ""}
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="${assetsPrefix}style.css${v}">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='25' font-size='26' font-family='monospace'>M</text></svg>">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230d7581'/><path d='M8.5 23.5v-15L16 18l7.5-9.5v15' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/></svg>">
 <script>
 /* Applique le thème enregistré avant le premier rendu, pour éviter le flash
    de la mauvaise palette au chargement. */
