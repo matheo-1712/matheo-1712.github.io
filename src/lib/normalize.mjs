@@ -26,8 +26,9 @@ export function frontmatter(text) {
 const NOISE_HEADINGS =
   /^(installation|install|getting started|démarrage|demarrage|prérequis|prerequis|prerequisites|usage|utilisation|configuration|config|licence|license|contributing|contribution|contributeurs|contributors|credits|crédits|remerciements|sommaire|table des matières|table of contents|toc|changelog|roadmap|todo|tests?|déploiement|deploiement|deployment|support|faq|auteurs?|authors?)\b/i;
 
-// Services de badges : leurs images ne disent rien du projet.
-const BADGE = String.raw`(?:https?:)?\/\/(?:img\.shields\.io|badge\.fury\.io|badgen\.net|codecov\.io|github\.com\/[^)"'\s]+\/(?:actions\/)?workflows\/[^)"'\s]+\/badge\.svg)`;
+// Services de badges : leurs images ne disent rien du projet. S'y ajoutent les
+// SVG nommes comme des badges (`License-MIT-blue.svg`), ou qu'ils soient heberges.
+const BADGE = String.raw`(?:https?:)?\/\/(?:img\.shields\.io|badge\.fury\.io|badgen\.net|codecov\.io|github\.com\/[^)"'\s]+\/(?:actions\/)?workflows\/[^)"'\s]+\/badge\.svg|[^)"'\s]*\/[^/)"'\s]*(?:license|badge)[^/)"'\s]*\.svg)`;
 
 // Retire ce qui ne dit rien d'un projet : badges, titre, sections d'install.
 // Les captures et illustrations du README sont conservees.
@@ -38,8 +39,8 @@ export function cleanReadme(md) {
   text = text.replace(/^\uFEFF?---\n[\s\S]*?\n---\n/, ""); // front-matter
   text = text.replace(/<!--[\s\S]*?-->/g, ""); // commentaires HTML
   // Badges, en markdown (cliquables ou non) puis en HTML.
-  text = text.replace(new RegExp(String.raw`\[!\[[^\]]*\]\(${BADGE}[^)]*\)\]\([^)]*\)`, "g"), "");
-  text = text.replace(new RegExp(String.raw`!\[[^\]]*\]\(${BADGE}[^)]*\)`, "g"), "");
+  text = text.replace(new RegExp(String.raw`\[!\[[^\]]*\]\(${BADGE}[^)]*\)\]\([^)]*\)`, "gi"), "");
+  text = text.replace(new RegExp(String.raw`!\[[^\]]*\]\(${BADGE}[^)]*\)`, "gi"), "");
   text = text.replace(new RegExp(String.raw`<a\b[^>]*>\s*<img\b[^>]*src=["']${BADGE}[^>]*>\s*<\/a>`, "gi"), "");
   text = text.replace(new RegExp(String.raw`<img\b[^>]*src=["']${BADGE}[^>]*>`, "gi"), "");
   // Blocs HTML d'en-tete devenus vides une fois les badges retires.
