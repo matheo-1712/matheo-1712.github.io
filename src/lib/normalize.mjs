@@ -26,19 +26,24 @@ export function frontmatter(text) {
 const NOISE_HEADINGS =
   /^(installation|install|getting started|démarrage|demarrage|prérequis|prerequis|prerequisites|usage|utilisation|configuration|config|licence|license|contributing|contribution|contributeurs|contributors|credits|crédits|remerciements|sommaire|table des matières|table of contents|toc|changelog|roadmap|todo|tests?|déploiement|deploiement|deployment|support|faq|auteurs?|authors?)\b/i;
 
+// Services de badges : leurs images ne disent rien du projet.
+const BADGE = String.raw`(?:https?:)?\/\/(?:img\.shields\.io|badge\.fury\.io|badgen\.net|codecov\.io|github\.com\/[^)"'\s]+\/(?:actions\/)?workflows\/[^)"'\s]+\/badge\.svg)`;
+
 // Retire ce qui ne dit rien d'un projet : badges, titre, sections d'install.
+// Les captures et illustrations du README sont conservees.
 export function cleanReadme(md) {
   if (!md) return "";
   let text = md.replace(/\r\n/g, "\n");
 
   text = text.replace(/^\uFEFF?---\n[\s\S]*?\n---\n/, ""); // front-matter
   text = text.replace(/<!--[\s\S]*?-->/g, ""); // commentaires HTML
-  text = text.replace(/^\s*<(p|div|h1|a|picture|center)[^>]*>[\s\S]*?<\/\1>\s*$/gim, ""); // blocs HTML d'en-tete
-  text = text.replace(/^\s*<img[^>]*>\s*$/gim, ""); // <img> seule : balise auto-fermante
-  text = text.replace(/^\s*\[!\[[^\]]*\]\([^)]*\)\]\([^)]*\)\s*$/gm, ""); // badge cliquable
-  text = text.replace(/^\s*!\[[^\]]*\]\([^)]*\)\s*$/gm, ""); // image seule sur sa ligne
-  text = text.replace(/\[!\[[^\]]*\]\([^)]*\)\]\([^)]*\)/g, ""); // badges inline
-  text = text.replace(/!\[[^\]]*\]\((?:https?:\/\/)?(?:img\.shields\.io|badge\.fury\.io|badgen\.net|codecov\.io)[^)]*\)/g, "");
+  // Badges, en markdown (cliquables ou non) puis en HTML.
+  text = text.replace(new RegExp(String.raw`\[!\[[^\]]*\]\(${BADGE}[^)]*\)\]\([^)]*\)`, "g"), "");
+  text = text.replace(new RegExp(String.raw`!\[[^\]]*\]\(${BADGE}[^)]*\)`, "g"), "");
+  text = text.replace(new RegExp(String.raw`<a\b[^>]*>\s*<img\b[^>]*src=["']${BADGE}[^>]*>\s*<\/a>`, "gi"), "");
+  text = text.replace(new RegExp(String.raw`<img\b[^>]*src=["']${BADGE}[^>]*>`, "gi"), "");
+  // Blocs HTML d'en-tete devenus vides une fois les badges retires.
+  text = text.replace(/^\s*<(p|div|center)[^>]*>\s*<\/\1>\s*$/gim, "");
   text = text.replace(/^\s*#{1,6}\s*$/gm, ""); // titre vide servant de separateur
 
   const lines = text.split("\n");
@@ -67,6 +72,7 @@ export function firstParagraph(md, maxLen = 260) {
   for (const block of clean.split(/\n\s*\n/)) {
     let p = block.trim();
     if (!p || p.startsWith("#") || p.startsWith("```") || p.startsWith("|") || p.startsWith(">")) continue;
+    if (p.startsWith("<") || p.startsWith("![") || p.startsWith("[![")) continue; // image ou bloc HTML
     if (/^[-*+]\s/.test(p) || /^\d+\.\s/.test(p)) continue;
     p = p
       .replace(/\[([^\]]+)\]\([^)]*\)/g, "$1") // liens -> texte
