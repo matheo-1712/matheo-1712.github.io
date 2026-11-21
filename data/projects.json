@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-21T02:24:29.213Z",
+  "generated": "2026-11-21T13:32:04.824Z",
   "count": 21,
   "projects": [
     {
@@ -237,7 +237,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 11458,
+        "downloads": 11472,
         "followers": 21,
         "license": "MIT"
       },
@@ -362,7 +362,7 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 4502,
+        "downloads": 4528,
         "followers": 19,
         "license": "CC0-1.0"
       },
@@ -621,9 +621,9 @@
       "status": "wip",
       "started": "2026-11-18T20:54:10Z",
       "ended": "",
-      "updated": "2026-11-21T02:07:36Z",
+      "updated": "2026-11-21T02:59:51Z",
       "featured": false,
-      "version": "v0.1.2",
+      "version": "v0.1.3",
       "prerelease": true,
       "image": null,
       "links": {
@@ -631,8 +631,8 @@
       },
       "stars": 0,
       "contribution": {
-        "commits": 38,
-        "total": 38,
+        "commits": 40,
+        "total": 40,
         "rank": 1,
         "contributors": 1
       },
