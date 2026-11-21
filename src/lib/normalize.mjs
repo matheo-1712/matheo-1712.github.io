@@ -24,7 +24,7 @@ export function frontmatter(text) {
 }
 
 const NOISE_HEADINGS =
-  /^(installation|install|getting started|démarrage|demarrage|prérequis|prerequis|prerequisites|usage|utilisation|configuration|config|licence|license|contributing|contribution|contributeurs|contributors|credits|crédits|remerciements|sommaire|table des matières|table of contents|toc|changelog|roadmap|todo|tests?|déploiement|deploiement|deployment|support|faq|auteurs?|authors?)\b/i;
+  /^(getting started|démarrage|demarrage|usage|utilisation|configuration|config|licence|license|contributing|contribution|contributeurs|contributors|credits|crédits|remerciements|sommaire|table des matières|table of contents|toc|changelog|roadmap|todo|tests?|déploiement|deploiement|deployment|support|faq|auteurs?|authors?)\b/i;
 
 // Services de badges : leurs images ne disent rien du projet. S'y ajoutent les
 // SVG nommes comme des badges (`License-MIT-blue.svg`), ou qu'ils soient heberges.
