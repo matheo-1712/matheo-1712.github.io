@@ -1,6 +1,6 @@
 {
-  "generated": "2026-11-20T14:06:31.868Z",
-  "count": 20,
+  "generated": "2026-11-21T01:51:02.941Z",
+  "count": 21,
   "projects": [
     {
       "key": "l-antre-des-loutres/cobblemon-rlm",
@@ -237,7 +237,7 @@
       "modrinth": {
         "slug": "cobblemon-rlm",
         "url": "https://modrinth.com/project/cobblemon-rlm",
-        "downloads": 11394,
+        "downloads": 11458,
         "followers": 21,
         "license": "MIT"
       },
@@ -362,7 +362,7 @@
       "modrinth": {
         "slug": "cobblemon-trainers-rerebleue",
         "url": "https://modrinth.com/project/cobblemon-trainers-rerebleue",
-        "downloads": 4469,
+        "downloads": 4501,
         "followers": 19,
         "license": "CC0-1.0"
       },
@@ -409,6 +409,42 @@
       ]
     },
     {
+      "key": "l-antre-des-loutres/mateloutre",
+      "slug": "mateloutre",
+      "title": "Mateloutre",
+      "summary": "Mateloutre mais qui marche",
+      "body": "",
+      "type": "Bot Discord",
+      "stack": [
+        "TypeScript"
+      ],
+      "status": "prod",
+      "started": "2026-01-17T12:47:20Z",
+      "ended": "",
+      "updated": "2026-11-20T22:38:13Z",
+      "featured": false,
+      "version": "v1.3.1",
+      "prerelease": false,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/L-Antre-des-Loutres/Mateloutre"
+      },
+      "stars": 1,
+      "contribution": {
+        "commits": 77,
+        "total": 90,
+        "rank": 1,
+        "contributors": 2
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": "L-Antre-des-Loutres",
+      "hidden": false,
+      "sources": [
+        "github"
+      ]
+    },
+    {
       "key": "l-antre-des-loutres/astroloutre",
       "slug": "astroloutre",
       "title": "Astroloutre",
@@ -448,47 +484,11 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-11-20",
+        "lastSeenUp": "2026-11-21",
         "urls": {
           "https://antredesloutres.fr": true
         }
       }
-    },
-    {
-      "key": "l-antre-des-loutres/mateloutre",
-      "slug": "mateloutre",
-      "title": "Mateloutre",
-      "summary": "Mateloutre mais qui marche",
-      "body": "",
-      "type": "Bot Discord",
-      "stack": [
-        "TypeScript"
-      ],
-      "status": "prod",
-      "started": "2026-01-17T12:47:20Z",
-      "ended": "",
-      "updated": "2026-10-13T13:44:08Z",
-      "featured": false,
-      "version": "v1.3.1",
-      "prerelease": false,
-      "image": null,
-      "links": {
-        "repo": "https://github.com/L-Antre-des-Loutres/Mateloutre"
-      },
-      "stars": 1,
-      "contribution": {
-        "commits": 77,
-        "total": 90,
-        "rank": 1,
-        "contributors": 2
-      },
-      "gallery": [],
-      "modrinth": null,
-      "org": "L-Antre-des-Loutres",
-      "hidden": false,
-      "sources": [
-        "github"
-      ]
     },
     {
       "key": "matheo-1712/oapi",
@@ -606,6 +606,42 @@
           "status": "archived",
           "relation": "predecessor"
         }
+      ]
+    },
+    {
+      "key": "matheo-1712/cobblemon-league-screen",
+      "slug": "cobblemon-league-screen",
+      "title": "Cobblemon League Screen",
+      "summary": "Cobblemon League Screen est un mod Minecraft open source qui ajoute un écran qui suit le combat comme dans les combats de ligue de l'anime à Cobblemon.",
+      "body": "Cobblemon League Screen est un mod Minecraft open source qui ajoute un écran qui suit le combat comme dans les combats de ligue de l'anime à Cobblemon.\n\n## Fonctionnalités\n\n- **Écran de ligue**: pose des blocs d'écran pour construire un mur de la taille que tu veux, et il affiche l'équipe du joueur et son statut en direct\n- **Terminal d'inscription**: relie jusqu'à 8 écrans, puis clique sur le terminal pendant un combat pour l'afficher à l'écran\n- **Arène**: définis une zone dans le terminal d'inscription, et l'écran se lance tout seul quand deux dresseurs s'affrontent dedans\n- **Thèmes**: change l'apparence de l'écran depuis le menu du terminal, ou ajoute tes propres thèmes avec un data pack\n- Compatible avec **Cobblemon Trainers** (optionnel)\n\n## Datapack\n\nTu peux créer tes propres thèmes d'écran avec un data pack: couleurs, place des Pokémon, portraits des dresseurs, images et textes. Tout est expliqué dans le [guide des data packs](docs/DATAPACK.fr.md).\n\nIci seront listés les thèmes créés par les joueurs, pour changer le look de ton écran sans rien écrire.\n\n*Aucun thème pour l'instant.*\n\nTu as créé un thème et tu veux qu'il soit dans la liste? Ouvre une [issue sur GitHub](https://github.com/matheo-1712/cobblemon-league-screen/issues) avec son lien.",
+      "type": "",
+      "stack": [
+        "Kotlin"
+      ],
+      "status": "wip",
+      "started": "2026-11-18T20:54:10Z",
+      "ended": "",
+      "updated": "2026-11-21T01:07:18Z",
+      "featured": false,
+      "version": "v0.1.2",
+      "prerelease": true,
+      "image": null,
+      "links": {
+        "repo": "https://github.com/matheo-1712/cobblemon-league-screen"
+      },
+      "stars": 0,
+      "contribution": {
+        "commits": 36,
+        "total": 36,
+        "rank": 1,
+        "contributors": 1
+      },
+      "gallery": [],
+      "modrinth": null,
+      "org": null,
+      "hidden": false,
+      "sources": [
+        "github"
       ]
     },
     {
@@ -1122,7 +1158,7 @@
       "service": {
         "up": true,
         "uncertain": false,
-        "lastSeenUp": "2026-11-20",
+        "lastSeenUp": "2026-11-21",
         "urls": {
           "https://antredesloutres.fr": true
         }
